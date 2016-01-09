@@ -19,23 +19,35 @@
     </section>
 
     <section class="main-content">
-      <p></p>
+      <p>
+</p>
+  A Leaflet map!
+  
+  
+  
+    #map{ height: 100% }
+  
 
 
 
-<div id="map"></div>
+<p></p><div id="map"></div>
 
-<h1>
-<a id="map--height-400px-" class="anchor" href="#map--height-400px-" aria-hidden="true"><span class="octicon octicon-link"></span></a>map { height: 400px; }</h1>
+<p></p>
 
-<p>var map = L.map('map', {center: [61.505, -0.09], zoom: 13});</p>
+<p>// initialize the map
+ var map = L.map('map', {center: [61.505, -0.09], zoom: 13});</p>
 
-<p>L.tileLayer('<a href="https://api.tiles.mapbox.com/v4/%7Bid%7D/%7Bz%7D/%7Bx%7D/%7By%7D.png?access_token=%7BaccessToken%7D">https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}</a>', {
-    attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'leaflet-testi',
-    accessToken: 'your.mapbox.public.access.token'
-}).addTo(map);</p>
+<p>// load a tile layer
+  L.tileLayer('<a href="http://tiles.mapc.org/basemap/%7Bz%7D/%7Bx%7D/%7By%7D.png">http://tiles.mapc.org/basemap/{z}/{x}/{y}.png</a>',
+    {
+      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);</p>
+
+<p>
+
+</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/keitaaa1/leaflet-testi">Leaflet-testi</a> is maintained by <a href="https://github.com/keitaaa1">keitaaa1</a>.</span>
